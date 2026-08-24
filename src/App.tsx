@@ -16,7 +16,7 @@ const Contact = lazy(() => import('./pages/Contact'))
 const Projects = lazy(() => import('./components/section/Projects'))
 const Experience = lazy(() => import('./components/section/Experience'))
 const Skills = lazy(() => import('./components/section/Skills'))
-const Certifications = lazy(() => import('./components/section/Certifications'))
+// const Certifications = lazy(() => import('./components/section/Certifications'))
 const Footer = lazy(() => import('./components/Footer'))
 
 function HomePage() {
@@ -77,7 +77,7 @@ function HomePage() {
         <Skills />
       </Suspense>
       <Suspense fallback={<div className="h-64 flex items-center justify-center">Loading...</div>}>
-        <Certifications />
+        {/* <Certifications /> */}
       </Suspense>
     </>
   )
@@ -89,7 +89,7 @@ function AppContent() {
   return (
     <>
       <Navigation />
-      <div className="app transition-colors duration-300" style={{ backgroundColor: isDarkMode ? '#101727' : undefined }}>
+      <div className="app transition-colors duration-300" style={{ backgroundColor: isDarkMode ? '#15070A' : undefined }}>
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <main id="main-content" className="main-content">
           <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>

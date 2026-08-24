@@ -17,15 +17,28 @@ import JavaLight from './Java-Light.svg';
 import JavaScript from './JavaScript.svg';
 import JQuery from './JQuery.svg';
 import LaTeXLight from './LaTeX-Light.svg';
+import MariaDB from './MariaDB.png';
 import MaterialUILight from './MaterialUI-Light.svg';
+import MatPlotLib from './MatPlotLib.png';
+import Matlab from './Matlab.png';
 import MongoDB from './MongoDB.svg';
+import MySql from './MySql.png';
+import n8n from './n8n.png';
 import NodeJSLight from './NodeJS-Light.svg';
 import NotionLight from './Notion-Light.svg';
 import NpmLight from './Npm-Light.svg';
+import NumPy from './NumPy.png';
+import Pandas from './Pandas.png';
 import Postman from './Postman.svg';
+import Python from './Python.png';
 import ReactLight from './React-Light.svg';
 import RedisLight from './Redis-Light.svg';
+import ScikitLearn from './ScikitLearn.png';
+import SciPy from './SciPy.svg';
+import Seaborn from './Seaborn.png';
 import StackOverflowLight from './StackOverflow-Light.svg';
+import StatsModels from './StatsModels.png';
+import Tableau from './Tableau.png';
 import TailwindCSSLight from './TailwindCSS-Light.svg';
 import TensorFlowLight from './TensorFlow-Light.svg';
 import ThreeJSLight from './ThreeJS-Light.svg';
@@ -53,15 +66,28 @@ export const techStackIcons = {
   JavaScript,
   JQuery,
   LaTeXLight,
+  MariaDB,
   MaterialUILight,
+  Matlab,
+  MatPlotLib,
   MongoDB,
+  MySql,
+  n8n,
   NodeJSLight,
   NotionLight,
   NpmLight,
+  NumPy,
+  Pandas,
   Postman,
+  Python,
   ReactLight,
   RedisLight,
+  ScikitLearn,
+  SciPy,
+  Seaborn,
   StackOverflowLight,
+  StatsModels,
+  Tableau,
   TailwindCSSLight,
   TensorFlowLight,
   ThreeJSLight,

@@ -8,34 +8,37 @@ const Experience = () => {
   const themeColors = useThemeColors();
   const experiences = [
     {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
+      title: "Sales Assistant",
+      company: "Zara",
+      location: "Mexico City, Mexico",
+      period: "May 2026 - Jul 2026",
       description: [
-        "Description of your role and accomplishments",
+        "Delivered customer-focused service in a fast-paced retail environment, assisting customers with product selection and purchase decisions.",
+        "Supported inventory organization, stock replenishment, and visual merchandising to ensure an optimal shopping experience.",
+        "Managed point-of-sale transactions accurately and efficiently while maintaining high customer satisfaction standards."
       ]
     },
     {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
+      title: "Research Intern",
+      company: "Instituto de Investigación Aplicada y Tecnología",
+      location: "Mexico City, Mexico",
+      period: "Feb 2025 - May 2025",
       description: [
-        "Description of your role and accomplishments",
-        "Another accomplishment or responsibility",
-        "One more key achievement",
+        "Developed a solution for anonymizing sensitive information in text through workflow automation using n8n and Large Language Model (LLM) integration.",
+        "Performed preprocessing and transformation of textual data to support further analysis.",
+        "Co-authored an academic paper on the importance of data anonymization in real-world contexts: “Personal Data Anonymization through the Application of Natural Language Processing Techniques.”",
       ]
     },
     {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
+      title: "Research Intern",
+      company: "Department of Physics and Mathematics (IBERO)",
+      location: "Mexico City, Mexico",
+      period: "Feb 2024 - Oct 2024",
       description: [
-        "Description of your role and accomplishments",
-        "Another accomplishment or responsibility",
-        "One more key achievement",
+        "Analyzed experimental data from CERN Open Data using Python.",
+        "Processed and explored datasets to identify patterns in particle physics events.",
+        "Interpreted results within a scientific research context.",
+        "Presented findings at the National Physics Congress 2024 through the poster: “Reconstrucción de Masa Invariante de Dos Muones con CMS open data.”"
       ]
     }
   ];

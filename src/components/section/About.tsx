@@ -10,7 +10,7 @@ import { aboutMeJournalWebp800, aboutMeJournalWebp400, profile1, profile2, profi
 
 const About = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [asciiText, setAsciiText] = useState('');
+  // const [ setAsciiText] = useState('');
   const [showProfileModal, setShowProfileModal] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -19,16 +19,14 @@ const About = () => {
   const themeColors = useThemeColors();
 
   const roles = [
-    'Software Engineer',
-    'Full-Stack Developer',
-    'Systems Engineer',
-    'Frontend Developer',
+    'Data Science Engineer Student',
+    'Data Analyst'
   ];
 
   const profileImages = [
-    { src: profile1, caption: "photo 1" },
-    { src: profile2, caption: "photo 2" },
-    { src: profile3, caption: "photo 3" }
+    { src: profile1, caption: "Congreso Nacional de Física 2024" },
+    { src: profile2, caption: "Datics (student society)" },
+    { src: profile3, caption: "Hackathon UNAM" }
   ];
 
   const fullAsciiArt = `⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -49,7 +47,7 @@ const About = () => {
 
     const typeWriter = () => {
       if (currentIndex < fullAsciiArt.length) {
-        setAsciiText(fullAsciiArt.substring(0, currentIndex + 1));
+        // setAsciiText(fullAsciiArt.substring(0, currentIndex + 1));
         currentIndex++;
         setTimeout(typeWriter, typingSpeed);
       }
@@ -213,7 +211,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row justify-between items-start max-w-6xl mx-auto gap-8">
             <div className="text-left w-full md:w-auto">
               <div className="ascii-container justify-start text-3xl md:text-4xl lg:text-5xl">
-                <AsciiMorphText text="Hi, I'm Your Name" />
+                <AsciiMorphText text="Hi, I'm Wendy Guzmán" />
               </div>
               <div className="hero-subtitle justify-start text-base md:text-lg lg:text-xl mt-2">
                 <div className="flex flex-wrap items-center justify-start">
@@ -239,7 +237,7 @@ const About = () => {
               </div>
             </div>
             <div className="hidden md:block" style={{ fontSize: '0.8rem', lineHeight: '1', fontFamily: 'monospace', minHeight: '150px', color: isDarkMode ? themeColors.primary : themeColors.colors.pink[500] }}>
-              <pre>{asciiText}</pre>
+            
             </div>
           </div>
         </div>
@@ -357,7 +355,7 @@ const About = () => {
                 style={{
                   backgroundColor: isDarkMode ? withAlpha(themeColors.colors.dark[700], 0.9) : withAlpha(themeColors.colors.white, 0.8),
                   color: isDarkMode ? themeColors.colors.white : themeColors.colors.dark[700],
-                  border: isDarkMode ? '2px solid #374151' : 'none',
+                  border: isDarkMode ? '2px solid #41342F' : 'none',
                   boxShadow: isDarkMode ? `0 4px 12px ${withAlpha(themeColors.colors.black, 0.6)}` : undefined
                 } as React.CSSProperties}
                 aria-label="Previous image"
@@ -371,7 +369,7 @@ const About = () => {
                 style={{
                   backgroundColor: isDarkMode ? withAlpha(themeColors.colors.dark[700], 0.9) : withAlpha(themeColors.colors.white, 0.8),
                   color: isDarkMode ? themeColors.colors.white : themeColors.colors.dark[700],
-                  border: isDarkMode ? '2px solid #374151' : 'none',
+                  border: isDarkMode ? '2px solid #41342F' : 'none',
                   boxShadow: isDarkMode ? `0 4px 12px ${withAlpha(themeColors.colors.black, 0.6)}` : undefined
                 } as React.CSSProperties}
                 aria-label="Next image"

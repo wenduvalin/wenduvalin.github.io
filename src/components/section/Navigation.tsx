@@ -17,9 +17,8 @@ const Navigation = () => {
   const tabs = useMemo(() => [
     { id: 'about', label: 'About' },
     { id: 'projects', label: 'Projects' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'skills', label: 'Skills' }
-  ], []);
+    { id: 'experience', label: 'Experience' }
+    ], []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -114,8 +113,15 @@ const Navigation = () => {
             WebkitTextFillColor: themeColors.colors.pink[500]
           }}
           onClick={() => window.location.href = '/'}
-          aria-label="Your Name - Go to homepage">
-          Your Name
+          aria-label="Wendy Guzmán - Go to homepage">
+            <img
+              src= "favicon.png"
+              alt="wendy guzman"
+              style={{
+                height: '50px',
+                width: 'auto'
+              }}
+            />
         </button>
         
         {/* Desktop Navigation */}

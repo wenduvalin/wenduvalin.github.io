@@ -16,24 +16,28 @@
 
 :root {
   /* Color Palette - Updated to use centralized color system */
-  /* Pink palette - from colors.ts */
-  --color-pink-50: #FFF5F7;        /* Light pink background */
-  --color-pink-100: #FAE8ED;       /* Lavender blush */
-  --color-pink-200: #FDD5DF;       /* Mimi pink */
-  --color-pink-300: #EABEC3;       /* Main dusty pink */
-  --color-pink-400: #D9A5AC;       /* Darker dusty pink */
-  --color-pink-500: #C88B95;       /* Even darker dusty pink */
-  --color-pink-600: #B8727C;       /* Strong dusty pink */
-  --color-pink-700: #A6707B;       /* Navigation text */
-  --color-pink-800: #8B5A65;       /* Main text pink (WCAG AA) */
+  /* Burgundy palette - from colors.ts, anchored on brand primary #800020 */
+  --color-pink-50: #F7E8EC;        /* Soft ivory-blush background */
+  --color-pink-100: #F0CCD4;       /* Light blush */
+  --color-pink-200: #E495A7;       /* Dusty rose */
+  --color-pink-300: #D7476B;       /* Rose-burgundy (primary accent) */
+  --color-pink-400: #C7234C;       /* Rich burgundy-rose */
+  --color-pink-500: #AA1339;       /* Vivid burgundy */
+  --color-pink-600: #900629;       /* Deep burgundy */
+  --color-pink-700: #800020;       /* Brand primary - Borgoña */
+  --color-pink-800: #5C0018;       /* Dark burgundy (main text, WCAG AA) */
 
-  /* Dark theme colors */
-  --color-dark-800: #1E293B;       /* Very dark gray */
-  --color-dark-900: #0F172A;       /* Almost black */
+  /* Neutral theme colors - warm, derived from the burgundy hue */
+  --color-dark-800: #321B1F;       /* Deep warm neutral */
+  --color-dark-900: #220F12;       /* Near-black, burgundy-derived */
 
   /* Base colors */
   --color-white: #FFFFFF;
   --color-transparent: transparent;
+
+  /* Typography - Tipografía A (titles/headings) + Tipografía B (body/nav/buttons) */
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
   /* Legacy variables for backward compatibility */
   --lavender-blush: var(--color-pink-100);
@@ -80,7 +84,7 @@ select:focus {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #B8727C; /* Darker dusty pink for better contrast */
+  background: #900629; /* Deep burgundy for strong contrast with white text */
   color: white;
   padding: 8px 16px;
   border-radius: 0 0 4px 0;
@@ -101,9 +105,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--white);
@@ -112,6 +114,15 @@ body {
   padding: 0;
   overflow-x: hidden;
   max-width: 100vw;
+}
+
+/* Tipografía A for all general-content headings site-wide.
+   Does not affect .signature-name (Punk Babe), the "drag me!" span
+   (DK Crayonista), or the monospace decode/glitch + ascii elements,
+   since none of those are h1-h6 elements and/or carry their own
+   more-specific font-family already. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
 }
 
 .app {
@@ -451,17 +462,17 @@ body {
 
 /* Dark mode styles for hero action buttons */
 .dark .hero-action-btn {
-  color: #FDD5DF;
-  border-color: #EABEC3;
+  color: #F0CCD4;
+  border-color: #E495A7;
 }
 
 .dark .hero-action-btn::before {
-  background: #EABEC3;
+  background: #E495A7;
 }
 
 .dark .hero-action-btn:hover {
-  color: #0A0F1B;
-  border-color: #FDD5DF;
+  color: #15070A;
+  border-color: #F0CCD4;
 }
 
 .hero-description {
@@ -507,7 +518,7 @@ body {
 }
 
 .dark #projects .grid > * {
-  background: rgb(31, 41, 55);
+  background: rgb(50, 27, 31);
 }
 
 .scroll-down-btn {
@@ -573,9 +584,9 @@ body {
 }
 
 .dark .project-btn-outline {
-  background: rgb(31, 41, 55);
-  color: #EABEC3;
-  border-color: #D9A5AC;
+  background: rgb(50, 27, 31);
+  color: #E495A7;
+  border-color: #C7234C;
 }
 
 .project-btn-outline:focus {
@@ -675,11 +686,11 @@ body {
   }
   
   .mobile-nav-tab:hover {
-    background: rgba(234, 190, 195, 0.1);
+    background: rgba(215, 71, 107, 0.1);
   }
   
   .dark .mobile-nav-tab:hover {
-    background: rgba(234, 190, 195, 0.05);
+    background: rgba(215, 71, 107, 0.05);
   }
   
   .section h2 {

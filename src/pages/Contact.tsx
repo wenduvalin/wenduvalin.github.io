@@ -63,7 +63,6 @@ const Contact = () => {
             >
               Send Email
             </a>
-            <p className="text-xs mt-3" style={{ color: themeColors.text.tertiary }}>{socialLinks.display.email}</p>
           </article>
 
           {/* GitHub Card */}
@@ -85,7 +84,6 @@ const Contact = () => {
             >
               View Profile
             </a>
-            <p className="text-xs mt-3" style={{ color: themeColors.text.tertiary }}>{socialLinks.display.github}</p>
           </article>
 
           {/* LinkedIn Card */}
@@ -107,7 +105,6 @@ const Contact = () => {
             >
               Connect
             </a>
-            <p className="text-xs mt-3" style={{ color: themeColors.text.tertiary }}>{socialLinks.display.linkedin}</p>
           </article>
 
         </section>
